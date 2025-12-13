@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Create Event</title>
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -10,10 +11,10 @@
 <h2>Create Event</h2>
 <input id="title" placeholder="Title">
 <textarea id="description" placeholder="Description"></textarea>
-<input id="date" type="date">
+<input id="event-date" type="date" placeholder="Select Event Date">
 <input id="location" placeholder="Location">
 <input id="price" type="number" placeholder="Price">
-<button onclick="createEvent()">Create</button>
+<button onclick="addCreateEvent()">Create</button>
 </div>
 <script src="script.js"></script>
 </body>

@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Event Management</title>
+<title>Event Connect Platform</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="navbar">
-  <h2>Event Management</h2>
+  <h2>Event Connect Platform</h2>
   <div>
     <a href="login.html">Login</a>
     <a href="register.html">Register</a>
@@ -16,19 +16,19 @@
 
 <div class="container">
   <h2>Upcoming Events</h2>
-  <div id="eventList" class="grid"></div>
+  <div id="myEvents" class="grid"></div>
 </div>
 
 <!-- Registration Modal -->
 <div id="regModal" class="modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal()">&times;</span>
-    <h3>Register for Event</h3>
-    <input type="email" id="regEmail" placeholder="Enter your email">
-    <button onclick="confirmRegistration()">Confirm</button>
   </div>
 </div>
 
 <script src="script.js"></script>
+ <script>
+    upcoming(); 
+  </script>
 </body>
 </html>
