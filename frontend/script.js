@@ -318,7 +318,7 @@ async function payNow(eventId, price) {
   if (!res.ok) return alert(orderData.error || "Error creating payment");
 
   const options = {
-    key: "YOUR_RAZORPAY_KEY", // Replace with your Razorpay key
+    key: "rzp_test_RoMIgWzByeDiR0", // Replace with your Razorpay key
     amount: price * 100,
     currency: "INR",
     name: "Event Management",
@@ -349,3 +349,22 @@ async function payNow(eventId, price) {
 const rzp = new Razorpay(options);
 rzp.open();
 }
+
+// 🌙 Dark / Light Mode Logic
+async function loadTheme() {
+  const toggle = document.getElementById("themeToggle");
+
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+    toggle.checked = true;
+  }
+
+  toggle.addEventListener("change", () => {
+    document.body.classList.toggle("dark");
+    localStorage.setItem(
+      "theme",
+      document.body.classList.contains("dark") ? "dark" : "light"
+    );
+  });
+}
+loadTheme();

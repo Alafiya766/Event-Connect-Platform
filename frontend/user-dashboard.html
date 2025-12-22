@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,17 +8,33 @@
 </head>
 
 <body>
-  <div class="navbar">
-    
-  <h2>Welcome, <span id="username"></span></h2>
-  <p>Email: <span id="email"></span></p>
-    <button id="logoutBtn">Logout</button>
+
+<!-- Navbar -->
+<div class="navbar">
+  <h2>User Dashboard</h2>
+
+  <div class="nav-actions">
+    <!-- 🌗 Dark / Light Toggle -->
+    <label class="theme-toggle">
+      <input type="checkbox" id="themeToggle">
+      <span class="slider"></span>
+    </label>
+
+    <button id="logoutBtn" class="nav-btn">Logout</button>
+  </div>
+</div>
+
+<!-- Welcome Card -->
+<div class="container">
+  <div class="welcome-card">
+    <h3>Welcome, <span id="username"></span> 👋</h3>
+    <p>Email: <span id="email"></span></p>
   </div>
 
-  <h2 style="padding-left: 22px;padding-top: 10px;">Available Events</h2>
+  <h2>Available Events</h2>
   <div id="eventList" class="grid"></div>
+</div>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
-
 </html>

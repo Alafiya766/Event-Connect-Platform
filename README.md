@@ -40,7 +40,7 @@ Event Connect is a full-stack event management and booking platform that allows 
 ⚙️ Installation & Setup
 
 1️⃣ Clone the Repository
-git clone https://github.com/Alafiya@766/EventConnect-Platform.git
+git clone https://github.com/Alafiya766/EventConnect-Platform.git
 cd EventConnect-Platform
 
 2️⃣ Backend Setup (Node.js + Express)

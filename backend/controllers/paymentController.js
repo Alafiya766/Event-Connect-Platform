@@ -103,7 +103,7 @@ exports.verifyPayment = (req, res) => {
           from: process.env.EMAIL_USER,
           to: email,
           subject: `Payment Successful for ${event_name}`,
-          text: `Hello ${username},
+          text: `Hello Dear Participant,
 
 Your payment of ₹${amount} for the event "${event_name}" was successful!
 

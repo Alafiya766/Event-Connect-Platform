@@ -5,15 +5,26 @@
 <title>Event Connect Platform</title>
 <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
+<!-- Navbar -->
 <div class="navbar">
   <h2>Event Connect Platform</h2>
-  <div>
+
+  <div style="display:flex; align-items:center; gap:15px;">
     <a href="login.html">Login</a>
     <a href="register.html">Register</a>
+
+    <!-- 🌗 Dark / Light Toggle -->
+    <label class="theme-toggle">
+      <input type="checkbox" id="themeToggle">
+      <span class="slider"></span>
+    </label>
   </div>
 </div>
 
+<!-- Main Container -->
 <div class="container">
   <h2>Upcoming Events</h2>
   <div id="myEvents" class="grid"></div>
@@ -26,9 +37,7 @@
   </div>
 </div>
 
+<!-- Scripts -->
 <script src="script.js"></script>
- <script>
-    upcoming(); 
-  </script>
 </body>
 </html>
