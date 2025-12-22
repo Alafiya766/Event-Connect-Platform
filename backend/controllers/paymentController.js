@@ -9,7 +9,7 @@ const razorpay = new Razorpay({
     key_secret: process.env.RAZORPAY_SECRET,
 });
 
-// 1️⃣ Create Razorpay order & save payment as PENDING
+//  Create Razorpay order & save payment as PENDING
 exports.createOrder = async (req, res) => {
     try {
         const { user_id, event_id, amount } = req.body;
@@ -43,7 +43,7 @@ exports.createOrder = async (req, res) => {
 };
 
 // ---------------------------
-// 2️⃣ Verify Razorpay Payment
+//   Verify Razorpay Payment
 // ---------------------------
 exports.verifyPayment = (req, res) => {
   const { razorpay_payment_id, razorpay_order_id, razorpay_signature, email } = req.body;
