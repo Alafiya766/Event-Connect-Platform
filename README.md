@@ -85,7 +85,7 @@ npm start
 3. Click Open with Live Server
 
 Frontend runs at:
-http://127.0.0.1:5000
+http://127.0.0.1:5500
 
 
 4️⃣ Database Setup (MySQL)
