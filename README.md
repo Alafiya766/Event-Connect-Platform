@@ -10,6 +10,7 @@ Event Connect is a full-stack event management and booking platform that allows 
 
 
 🚀 Features
+
 👤 User
 
 -User registration & login
@@ -41,30 +42,40 @@ Event Connect is a full-stack event management and booking platform that allows 
 
 1️⃣ Clone the Repository
 git clone https://github.com/Alafiya766/EventConnect-Platform.git
+
 cd EventConnect-Platform
 
+
 2️⃣ Backend Setup (Node.js + Express)
+
 cd backend
+
 npm install express mysql2 dotenv cors bcrypt jsonwebtoken nodemailer razorpay body-parser
 
 **Create environment file:
 .env
 
 DB_HOST=localhost
+
 DB_USER=
+
 DB_PASSWORD=
+
 DB_NAME=
 
 JWT_SECRET=
 
 RAZORPAY_KEY=YOUR_RAZORPAY_KEY
+
 RAZORPAY_SECRET=YOUR_RAZORPAY_SECRET
 
 EMAIL_USER=yourgmail@gmail.com
+
 EMAIL_PASS=yourAppPassword
 
 **Start Server:
 npm start
+
 
 3️⃣ Frontend Setup
 ---VS Code Live Server (Recommended)
@@ -74,7 +85,8 @@ npm start
 3. Click Open with Live Server
 
 Frontend runs at:
-http://127.0.0.1:5500
+http://127.0.0.1:5000
+
 
 4️⃣ Database Setup (MySQL)
 
@@ -88,10 +100,15 @@ events
 registrations
 payments tables
 
+
 5️⃣ Razorpay Integration
---Supports Test Mode and Live Mode
+
+--Supports Test Mode
+
 --Payments stored in payments table
+
 --Order creation handled in backend
+
 
 5️⃣Test the Application
 
